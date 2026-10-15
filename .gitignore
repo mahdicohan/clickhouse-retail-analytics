@@ -1,4 +1,26 @@
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Secrets and local configuration
 .env
-data_files/
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local data and logs
+data/raw/
+data/processed/
+logs/
+*.log
+
+# Editors and operating system
+.vscode/
+.idea/
+.DS_Store
